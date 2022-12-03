@@ -93,7 +93,7 @@
         $("#loader").css('display','block');
         let abi;
         try{
-            abi = await (await fetch(`http://localhost:4040/contract?contractadd=${contract_address}`)).json()
+            abi = await (await fetch(`https://theflowx-poa9ef7c10fe22e3c25239de2aa8814b378393b3a3-titan.stackos.io/contract?contractadd=${contract_address}`)).json()
         }catch(e){
             $("#loader").css('display','none');
             return;
