@@ -150,7 +150,6 @@ Editor.prototype.onPlayButton = async function() {
 	const blob = new Blob( [ data ] );
 	const cid = await upload_flow(new File([blob], 'flow.json'))
     $("#env_box").html(`IPFS_CID=${cid}<br>
-    POLYGON_WALLET_PK=<span style="color: red;">"Your Polygon wallet PK"</span><br>
     PUSH_CHANNEL_PK=<span style="color: red;">"Your PUSH Channel PK"</span><br>`)
     $("#loader").css('display','none');
     $("#stos_popup").css("display", "block")
